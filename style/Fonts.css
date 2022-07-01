@@ -1,4 +1,8 @@
 @font-face {
     font-family: 'barlow';
-    src: url(../Fonts/Barlow/Barlow-Black.ttf);
+    local src: url(../Fonts/Barlow/Barlow-Black.ttf);
+}
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(../Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
 }

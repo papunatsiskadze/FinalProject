@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'barlow';
+    src: url(../Fonts/Barlow/Barlow-Black.ttf);
+    font-family: 'BebasNeue';
+    src: url(../Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+
 body{
     margin: 0; 
     justify-content: center;
@@ -7,6 +15,8 @@ body{
     background-color: bisque;
     padding-top: 10px;
     position: fixed;
+    align-items: center;
+    text-align: center;
 }
 nav{
     background-color: bisque;
@@ -16,7 +26,11 @@ li{
     list-style: none;
     font-size: 20px;
     text-align:center;
+    font-family: 'BebasNeue';
 }
 section{
-    margin-top: 800px;
+    margin-top: 100px;
 }
+
+
+
