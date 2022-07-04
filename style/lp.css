@@ -21,6 +21,10 @@ body{
 nav{
     background-color: bisque;
 }
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
 li{
     padding-top: 10px;
     list-style: none;
