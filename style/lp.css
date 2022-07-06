@@ -7,14 +7,16 @@
 
 
 body{
-    margin: 0; 
+    margin: 0;
 }
 .HDR{
     background-color: bisque;
     padding-top: 10px;
-    position: fixed;
+    position:fixed;
     align-items: center;
     text-align: center;
+    z-index: 3;
+
 }
 nav{
     background-color: bisque;
@@ -36,9 +38,46 @@ li{
     border-radius: 20px;
     padding: 40px;
 }
-.slider{
-    margin-top: 200px;
+img{
+    width: 1920px;
+    height: 1080px;
 }
+
+.img-slider{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    margin-top: 110px;
+
+}
+.img-slider .slide{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+.img-slider .slide img{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.img-slider .sliderbubbles{
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.img-slider .sliderbubbles .bubble{
+    background: rgba(21, 170, 71, 0.5);
+    width: 12px;
+    height: 12px;
+    margin: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 768px) {
     bodyclr{
