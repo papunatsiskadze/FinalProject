@@ -8,8 +8,6 @@
 
 body{
     margin: 0; 
-    justify-content: center;
-    display: flex;
 }
 .HDR{
     background-color: bisque;
@@ -32,6 +30,18 @@ li{
     text-align:center;
     font-family: 'BebasNeue';
 }
-section{
+.boutus{
     margin-top: 200px;
+    outline: 1px solid blue;
+    border-radius: 20px;
+    padding: 40px;
+}
+.slider{
+    margin-top: 200px;
+}
+
+@media only screen and (max-width: 768px) {
+    bodyclr{
+        background-color: crimson;
+    }
 }
