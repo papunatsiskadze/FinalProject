@@ -11,7 +11,6 @@
     src: url(../Fonts/Pacifico/Pacifico-Regular.ttf);
 }
 
-
 body{
     margin: 0;
 }
@@ -21,8 +20,7 @@ body{
     position:fixed;
     align-items: center;
     text-align: center;
-    z-index: 3;
-
+    z-index: 3; 
 }
 nav{
     background-color: bisque;
@@ -49,14 +47,23 @@ li{
 .divlogo > img{
     width: 450px;
     height: 200px;
-    margin-right: 75px;
+    margin-right: 40px;
 }
-.boutus{
+.aboutusdiv{
     margin-top: 100px;
-    outline: 1px solid blue;
     border-radius: 20px;
     padding: 40px;
-    background-color: rgb(189, 203, 218);
+}
+.articleheader{
+    color: rgb(56, 117, 248);
+    font-family: 'barlow';
+    font-size:bolder;
+    justify-content: center;
+    display: flex;
+}
+.creatydescription{
+    margin-top: 60px;
+    padding: 40px;
 }
 img{
     width: 1920px;
@@ -64,6 +71,19 @@ img{
 }
 
 /*Slider css*/
+.img-slider .slide .infodiv{
+    position: absolute;
+    top: 0;
+    padding: 50px;
+    width: 100%;
+}
+.hinfo{
+    color: rgb(184, 23, 58);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 50px;
+    font-weight: 800;
+}
 .firstphotofix{
     height: 100%;
 }
@@ -76,10 +96,11 @@ img{
 .img-slider{
     position: relative;
     width: 800px;
-    height: 500px;
+    height: 600px;
     margin-top: 100px;
-    outline: solid 1px salmon;
+    outline: solid 2px salmon;
     border-radius: 5px;
+    background-color: salmon;
 }
 .img-slider .slide{
     z-index: 1;
@@ -122,6 +143,21 @@ img{
 
 /*  slider done */
 
+.ptext{
+    font-family: 'barlow';
+    color: #00A9DE;
+    margin-top: 50px;
+}
+.ftr{
+    background-color: bisque;
+    position: relative;
+}
+.ftrtext{
+    text-align: center;
+    font-family: 'barlow';
+    padding: 10px;
+}
+
 @media only screen and (max-width: 820px) {
     .img-slider{
         width: 600px;
@@ -135,6 +171,7 @@ img{
         height: 10px;
         margin: 8px;
     }
+    
 }
 
 @media only screen and (max-width: 620px) {
@@ -150,6 +187,18 @@ img{
         height: 8px;
         margin: 6px;
     }
+    .img-slider .slide .infodiv{
+        position: absolute;
+        top: 0;
+        padding: 30px;
+    }
+    .hinfo{
+        color: rgb(184, 23, 58);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 30px;
+        font-weight: 800;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -164,5 +213,10 @@ img{
         width: 8px;
         height: 8px;
         margin: 6px;
+    }
+    .divlogo > img{
+        width: 300px;
+        height: 200px;
+        margin-right: 40px;
     }
 }
