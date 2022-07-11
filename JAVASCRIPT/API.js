@@ -1,23 +1,24 @@
 const API_URL = 'https://api.themoviedb.org/3/discover/movie?sort_by=${movies}&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1';
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
 const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&query=%22';
-// const STATIC_URL = 'https://api.themoviedb.org/3/'
+const STATIC_URL = 'https://api.themoviedb.org/3/'
 const main = document.getElementById('main')
 const form = document.getElementById('form')
 const search = document.getElementById('search')
 
 //Get Movies
 getMovies(API_URL)
+//how to pass parameter to fetch with await and async
 async function getMovies(url){
     const res= await fetch(url)
     const data= await res.json()
     displayMovies(data.results)
 }
 
-// function moviesByType(type){
-//     let api = `https://api.themoviedb.org/3/discover/movie?type=${type}&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1';`
-//     console.log(api)
-// }
+function moviesByType(type){
+    let api = `https://api.themoviedb.org/3/discover/movie?type=${type}&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1';`
+    console.log(api)
+}
 
 function displayMovies(movies){
    
@@ -71,5 +72,5 @@ form.addEventListener('submit', (e) => {
 // let button = document.getElementById('tea')
 // button.addEventListener('submit', (e) => {
 //     console.log(e)
-//     // moviesByType();
+//     // moviesByType()
 // })
