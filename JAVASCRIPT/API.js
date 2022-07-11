@@ -17,11 +17,11 @@ async function getMovies(url){
 
 function displayMovies(movies){
     main.innerHTML= ''
-    movies.foreach((movie) => {
-        const {title,poster_path,vote_average,overview} = movie
-        const moviesElement = document.createElement('div');
-        moviesElement.classList.add('movie')
-        moviesElement.innerHTML = `
+    movies.foreach((movie) =>{
+        const {title,poster_path,vote_average,overview} = movie;
+        const moviesEl = document.createElement('div');
+        moviesEl.classList.add('movie')
+        moviesEl.innerHTML = `
         <img src="${IMG_PATH + poster_path}" alt="${title}"/>
         <div class='movieinfo'>
         <h3> ${title}</h3>
@@ -32,7 +32,7 @@ function displayMovies(movies){
         </div>
         </div>
         `
-        main.appendChild(moviesElement);
+        main.appendChild(moviesEl);
     })
 }
 
@@ -46,7 +46,7 @@ function getClassesByRating(rating){
     }
 }
 //search pathing 
-form.addEventListener('submit', (e) =>{
+form.addEventListener('submit', (e) => {
     e.preventDefault();
     const searchValue = search.value;
     if(searchValue && search.value !== ''){
