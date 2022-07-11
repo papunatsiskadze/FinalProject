@@ -124,3 +124,35 @@ main{
 .task{
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 420px){
+    header{
+        justify-content: space-around;
+        display: flex;
+    }
+    input{
+        width: 200px;
+    }
+    #tasks{
+        width: 180px;
+        margin-right: 850px;
+    }
+    .actions{
+        display: flex;
+        flex-direction: column;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+    .task{
+        flex-direction: column;
+        display: flex;
+        width: 90px;
+    }
+    
+    form{
+        flex-direction: column;
+        display: flex;
+    }
+}
