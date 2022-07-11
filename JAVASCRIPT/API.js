@@ -18,8 +18,8 @@ async function getMovies(url){
 function displayMovies(movies){
     main.innerHTML=''
     movies.foreach((movie) =>{
-        const {title,poster_path,vote_average,overview} = movie;
-        const moviesEl = document.createElement('div');
+        const { title,poster_path,vote_average,overview} = movie
+        const moviesEl = document.createElement('div')
         moviesEl.classList.add('movie')
         moviesEl.innerHTML = `
         <img src="${IMG_PATH+poster_path}" alt="${title}"/>
