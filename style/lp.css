@@ -220,4 +220,33 @@ img{
         height: 200px;
         margin-right: 40px;
     }
+    .navlink{
+        font-size: 15px;
+        justify-content: center;
+        display: flex;
+    }
+    .img-slider{
+        width: 400px;
+    }
+    .hinfo{
+        color: rgb(184, 23, 58);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 20px;
+        font-weight: 800;
+        text-align: start;
+    }
+}
+@media only screen and (max-width: 340px){
+    .divlogo > img{
+        width: 180px;
+        height: 200px;
+        justify-content: center;
+        display: flex;
+    }
+}
+@media only screen and (max-width: 200px){
+    .divlogo > img{
+        display: none;
+    }
 }
