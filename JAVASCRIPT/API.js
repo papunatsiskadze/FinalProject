@@ -11,18 +11,18 @@ getMovies(API_URL)
 async function getMovies(url){
     const res = await fetch(url)
     const data = await res.json()
+    console.log(data.results)
     displayMovies(data.results)
-    console.log(data.results);
 }
 
 function displayMovies(movies){
-    main.innerHTML= ''
+    main.innerHTML=''
     movies.foreach((movie) =>{
         const {title,poster_path,vote_average,overview} = movie;
         const moviesEl = document.createElement('div');
         moviesEl.classList.add('movie')
         moviesEl.innerHTML = `
-        <img src="${IMG_PATH + poster_path}" alt="${title}"/>
+        <img src="${IMG_PATH+poster_path}" alt="${title}"/>
         <div class='movieinfo'>
         <h3> ${title}</h3>
         <span class="${getClassesByRating(vote_average)}">${vote_average}</span>
