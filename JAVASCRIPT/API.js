@@ -17,11 +17,14 @@ async function getMovies(url){
 
 function displayMovies(movies){
     main.innerHTML=''
-    movies.foreach((movie) =>{
+    movies.foreach((movie) => {
         const { title,poster_path,vote_average,overview} = movie
+        
         const moviesEl = document.createElement('div')
+        
         moviesEl.classList.add('movie')
         moviesEl.innerHTML = `
+
         <img src="${IMG_PATH+poster_path}" alt="${title}"/>
         <div class='movieinfo'>
         <h3> ${title}</h3>
@@ -32,6 +35,7 @@ function displayMovies(movies){
         </div>
         </div>
         `
+
         main.appendChild(moviesEl);
     })
 }
@@ -51,8 +55,8 @@ form.addEventListener('submit', (e) => {
     const searchValue = search.value;
     if(searchValue && search.value !== ''){
         getMovies(SEARCH_API+searchValue)
-        searchValue =''
+        search.value =' '
     }else{
-        window.location.reload();
+        window.location.reload()
     }
 })
