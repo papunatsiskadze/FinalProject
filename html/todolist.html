@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/todolist.css">
+    <title>To Do App</title>
+</head>
+<body>
+    <header>
+        <h1>
+            To Do App
+        </h1>
+        <form id="new-task-form">
+            <input type="text" id="new-task-input" placeholder="">
+            <input type="submit" id="new-task-submit" value="Add task">
+        </form>
+        <div class="maindiv">
+            <section class="task-list">
+                <h2>Tasks</h2>
+                <div id="tasks">
+                    <div class="task">
+                        <input type="text" class="text" value="" readonly>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button class="editbtn">
+                        Edit
+                    </button>
+                    <button class="deletebtn">
+                        Delete
+                    </button>
+
+                </div>
+            </section>
+        </div>
+    </header>
+
+<script src="/JAVASCRIPT/Todolist.js"></script>
+</body>
+</html>
