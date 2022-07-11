@@ -9,8 +9,8 @@ const search = document.getElementById('search')
 //Get Movies
 getMovies(API_URL)
 async function getMovies(url){
-    const res = await fetch(url)
-    const data = await res.json()
+    const res= await fetch(url)
+    const data= await res.json()
     console.log(data.results)
     displayMovies(data.results)
 }
@@ -24,7 +24,6 @@ function displayMovies(movies){
         
         moviesEl.classList.add('movie')
         moviesEl.innerHTML = `
-
         <img src="${IMG_PATH+poster_path}" alt="${title}"/>
         <div class='movieinfo'>
         <h3> ${title}</h3>
