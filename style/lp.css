@@ -14,6 +14,7 @@
 body{
     margin: 0;
     min-height: 100vh;
+    color: beige;
 }
 .HDR{
     background-color: bisque;
@@ -143,6 +144,17 @@ img{
 }
 
 /*  slider done */
+.cardsec{
+    display: flex;
+    justify-content:center;
+}
+.card{
+    background-color:rgb(233, 137, 12) !important;
+    outline: none !important;
+    border: 1px solid black !important;
+    padding: 4rem;
+    border-radius: 0 !important;
+}
 
 .ptext{
     font-family: 'barlow';
