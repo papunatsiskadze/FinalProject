@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'lobster';
+    src: url(/Fonts/Lobster/Lobster-Regular.ttf);
+}
+:root{
+    --winning-blocks :#1a9ddf;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: darkcyan;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 5rem;
+    font-family: 'lobster';
+    transition: 5s;
+}
+
+.container{
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(53, 56, 99);
+}
+#board{
+     width: 450px;
+     display: flex;
+     flex-wrap: wrap;
+     margin-top: 40px;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: orangered;
+    font-size: 120px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+.box:nth-child(3n){
+    border-right: none;
+}
+.box:nth-child(6) ~ .box{
+    border-bottom: none;
+}
+button{
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: indianred;
+    font-size: 1.25rem;
+    font-family: 'lobster';
+    transition: 2s transform;
+    font-weight: 400;
+}
+button:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+    transform:rotateX(200deg);
+}
+h1:hover{
+    transform: rotateY(300deg);
+}
