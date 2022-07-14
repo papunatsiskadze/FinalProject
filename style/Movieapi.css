@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'babasneue';
+    src: url(/Fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
 *{
     box-sizing: border-box;
 }
@@ -8,8 +13,19 @@ body{
 }
 header{
     padding: 1rem;
+    background-color: darkgray;
+    justify-content: center;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
     background-color: darkgray;
 }
 .search{
@@ -29,6 +45,7 @@ header{
 main{
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .movie{
     width: 300px;
@@ -42,12 +59,17 @@ main{
 .movie img{
     width: 100%;
 }
+h3{
+    color: black;
+    margin-left: 1.5rem;
+}
 .movieinfo{
     color: antiquewhite;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5 1 1rem;
+    font-family: 'babasneue';
 }
 .movieinfo span{
     background-color: white;
@@ -55,6 +77,7 @@ main{
     border-radius: 5px;
     color: black;
     font-weight: bold;
+    margin-right: 1rem;
 }
 .movieinfo span.green{
     color: lightgreen;

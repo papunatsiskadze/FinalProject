@@ -13,7 +13,7 @@
 
 body{
     margin: 0;
-    min-height: 100vh;
+    height: 100vh;
     color: beige;
 }
 .HDR{
@@ -151,9 +151,14 @@ img{
 .card{
     background-color:rgb(233, 137, 12) !important;
     outline: none !important;
-    border: 1px solid black !important;
-    padding: 4rem;
+    border: 1px solid wheat !important;
+    padding: 1rem;
     border-radius: 0 !important;
+    width: 33.3%;
+}
+
+.cardtext{
+    overflow: hidden;
 }
 
 .ptext{
@@ -184,7 +189,14 @@ img{
         height: 10px;
         margin: 8px;
     }
-    
+    .cardsec{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+    }
+    .card{
+        width: auto;
+    }
 }
 
 @media only screen and (max-width: 620px) {
