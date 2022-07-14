@@ -59,6 +59,7 @@ function restart() {
     
     boxes.forEach( box => {
         box.innerText = ''
+        box.style.backgroundColor=''
     })
 
     playerText = 'Tic Tac Toe'
