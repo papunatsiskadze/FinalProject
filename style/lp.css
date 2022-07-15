@@ -168,7 +168,6 @@ img{
 .btn-primary{
     font-family: 'barlow' !important;
 }
-
 .ptext{
     font-family: 'barlow';
     color: #00A9DE;
@@ -176,13 +175,77 @@ img{
 }
 .ftr{
     background-color: bisque;
-    position: relative;
-    bottom: 0;
+    position: fixed !important;
+ 
+    bottom: 0 !important;
 }
 .ftrtext{
     text-align: center;
     font-family: 'barlow';
     padding: 10px;
+}
+/* contact Page Styling */
+.contactsec{
+    padding: 150px;
+}
+.cont{
+    width: 80%;
+    margin: 50px auto;
+}
+.contact-box{
+    display: flex;
+    justify-content: space-between ;
+}
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid salmon;
+    padding-bottom: 5px;
+    outline: none;
+}
+textarea{
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+    outline: none;
+}
+label{
+    margin-bottom: 6px;
+    display: block;
+    color: coral;
+}
+button{
+    width: 100%;
+    border: none;
+    outline: none;
+    color: rgb(255, 166, 0);
+    border-radius: 20px;
+    height: 40px;
+    font-size: larger;
+    margin-top: 20px;
+}
+tr td:first-child{
+    padding-right: 10px;
+}
+tr td:last-child{
+    padding-top: 20px;
+}
+tr td{
+    padding-top: 10px;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1000px){
+    footer{
+        width: 100vw;
+    }
 }
 
 @media only screen and (max-width: 820px) {
@@ -205,6 +268,9 @@ img{
     }
     .card{
         width: auto;
+    }
+    .contact-box{
+        flex-direction: column;
     }
 }
 
@@ -232,6 +298,23 @@ img{
         letter-spacing: 3px;
         font-size: 30px;
         font-weight: 800;
+    }
+    .contact-left{
+        flex-direction: column;
+    }
+    .input-row{
+        flex-direction: column;
+        width: 80px;
+    }
+    textarea{
+        width: 80px;
+    }
+    input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid salmon;
+    padding-bottom: 5px;
+    outline: none;
     }
 }
 
