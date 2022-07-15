@@ -176,8 +176,8 @@ img{
 .ftr{
     background-color: bisque;
     position: fixed !important;
- 
     bottom: 0 !important;
+    z-index: 2;
 }
 .ftrtext{
     text-align: center;
