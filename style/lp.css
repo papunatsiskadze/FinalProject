@@ -184,6 +184,7 @@ img{
     font-family: 'barlow';
     padding: 10px;
 }
+
 /* contact Page Styling */
 .contactsec{
     padding: 150px;
@@ -240,6 +241,20 @@ tr td:last-child{
 tr td{
     padding-top: 10px;
     font-size: 1rem;
+}
+@media only screen and (min-width: 2500px){
+    p{
+        font-size: 30px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    label{
+        font-size: x-large;
+    }
+    .td{
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 1000px){
