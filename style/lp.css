@@ -13,7 +13,7 @@
 
 body{
     margin: 0;
-    height: 100vh;
+    padding: 0;
     color: beige;
 }
 .HDR{
@@ -156,9 +156,17 @@ img{
     border-radius: 0 !important;
     width: 33.3%;
 }
-
-.cardtext{
+.card-title{
+    font-family: 'barlow';
+    color:rgb(0, 81, 173);
+}
+.card-text{
     overflow: hidden;
+    font-family: 'barlow';
+    color:rgb(0, 0, 0);
+}
+.btn-primary{
+    font-family: 'barlow' !important;
 }
 
 .ptext{
@@ -169,6 +177,7 @@ img{
 .ftr{
     background-color: bisque;
     position: relative;
+    bottom: 0;
 }
 .ftrtext{
     text-align: center;
